@@ -10,6 +10,7 @@
 }
 
 #menu {
+  position: relative;
   width: var(--edge-size);
   aspect-ratio: 1;
   background-color: yellow; /* used for visual debugging, remove afterwards */
@@ -27,5 +28,17 @@
 #menu:hover {
   .bar:nth-child(2) {
     display: none;
+  }
+
+  .bar:nth-child(1) {
+    background-color: red; /* used for visual debugging, remove afterwards */
+    position: absolute;
+    top: 50%;
+  }
+
+  .bar:nth-child(3) {
+    background-color: green; /* used for visual debugging, remove afterwards */
+    position: absolute;
+    top: 50%;
   }
 }
