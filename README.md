@@ -6,6 +6,7 @@ Experimenting with web components by creating a custom hamburger to X menu eleme
 2. [`:nth-child()` CSS pseudoclass](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child)
 3. [`transform-origin` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform-origin)
 4. [MOV to GIF Converter](https://cloudconvert.com/mov-to-gif)
+5. [`transition` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition)
 
 # Strategy
 
