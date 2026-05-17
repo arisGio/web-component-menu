@@ -7,6 +7,7 @@
 :root {
   --edge-size: 60px;
   --bar-thickness: 8px;
+  --rotation-angle: 45deg;
 }
 
 #menu {
@@ -34,13 +35,15 @@
     background-color: red; /* used for visual debugging, remove afterwards */
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(var(--rotation-angle));
+    transform-origin: center;
   }
 
   .bar:nth-child(3) {
     background-color: green; /* used for visual debugging, remove afterwards */
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(calc(var(--rotation-angle) * -1));
+    transform-origin: center;
   }
 }
