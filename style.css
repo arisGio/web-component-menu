@@ -23,3 +23,9 @@
   height: var(--bar-thickness);
   background-color: black; /* used for visual debugging, remove afterwards */
 }
+
+#menu:hover {
+  .bar:nth-child(2) {
+    display: none;
+  }
+}
