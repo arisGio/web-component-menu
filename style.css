@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --edge-size: 60px;
+}
+
 #menu {
-  width: 60px;
+  width: var(--edge-size);
   aspect-ratio: 1;
   background-color: yellow; /* used for visual debugging */
   display: flex;
