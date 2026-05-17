@@ -6,7 +6,7 @@ export default class BurgerToXMenu extends HTMLElement {
 
     shadowRoot.innerHTML = `
             <style>
-                :root{
+                :host{
                     --edge-size: 60px;
                     --magic-translation: calc(var(--edge-size) / 2.3);
                     --bar-thickness: calc(var(--edge-size) / 7.5);

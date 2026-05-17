@@ -8,6 +8,8 @@ Experimenting with web components by creating a custom hamburger to X menu eleme
 4. [MOV to GIF Converter](https://cloudconvert.com/mov-to-gif)
 5. [`transition` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition)
 6. [Custom Web Componets from scratch](https://medium.com/@gustavo.uach/custom-web-components-from-scratch-6cc937a35421)
+7. [:host CSS pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:host)
+8. [See `CSS Custom Properties` from Encapsulating Style and Structure with Shadow DOM](https://css-tricks.com/encapsulating-style-and-structure-with-shadow-dom/#css-custom-properties)
 
 # Strategy
 
