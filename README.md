@@ -11,3 +11,4 @@ Experimenting with web components by creating a custom hamburger to X menu eleme
 
 1. First create the structure and the appropriate styles.
 2. Rely on personal inspiration, later on we can google on what other solutions exist.
+3. When finished with structure transition to creating the web component.
