@@ -14,7 +14,6 @@
 }
 
 #menu {
-  position: relative;
   width: var(--edge-size);
   aspect-ratio: 1;
   display: flex;
@@ -26,26 +25,21 @@
   width: 100%;
   height: var(--bar-thickness);
   background-color: var(--bar-color);
+  transition:
+    transform var(--transition-duration) var(--transition-easing),
+    opacity var(--transition-duration) var(--transition-easing);
 }
 
 #menu:hover {
   .bar:nth-child(2) {
-    display: none;
+    opacity: 0;
   }
 
   .bar:nth-child(1) {
-    position: absolute;
-    top: 50%;
-    transition: transform var(--transition-duration) var(--transition-easing);
-    transform: translateY(-50%) rotate(var(--rotation-angle));
-    transform-origin: center;
+    transform: translateY(26px) rotate(var(--rotation-angle));
   }
 
   .bar:nth-child(3) {
-    position: absolute;
-    top: 50%;
-    transition: transform var(--transition-duration) var(--transition-easing);
-    transform: translateY(-50%) rotate(calc(var(--rotation-angle) * -1));
-    transform-origin: center;
+    transform: translateY(-26px) rotate(calc(var(--rotation-angle) * -1));
   }
 }
