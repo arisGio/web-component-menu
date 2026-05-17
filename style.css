@@ -6,13 +6,20 @@
 
 :root {
   --edge-size: 60px;
+  --bar-thickness: 8px;
 }
 
 #menu {
   width: var(--edge-size);
   aspect-ratio: 1;
-  background-color: yellow; /* used for visual debugging */
+  background-color: yellow; /* used for visual debugging, remove afterwards */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.bar {
+  width: 100%;
+  height: var(--bar-thickness);
+  background-color: black; /* used for visual debugging, remove afterwards */
 }
