@@ -9,6 +9,8 @@
   --bar-thickness: 8px;
   --bar-color: black;
   --rotation-angle: 45deg;
+  --transition-duration: 250ms;
+  --transition-easing: ease-in-out;
 }
 
 #menu {
@@ -34,6 +36,7 @@
   .bar:nth-child(1) {
     position: absolute;
     top: 50%;
+    transition: transform var(--transition-duration) var(--transition-easing);
     transform: translateY(-50%) rotate(var(--rotation-angle));
     transform-origin: center;
   }
@@ -41,6 +44,7 @@
   .bar:nth-child(3) {
     position: absolute;
     top: 50%;
+    transition: transform var(--transition-duration) var(--transition-easing);
     transform: translateY(-50%) rotate(calc(var(--rotation-angle) * -1));
     transform-origin: center;
   }
