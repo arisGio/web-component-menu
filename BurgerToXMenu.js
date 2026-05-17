@@ -1,0 +1,61 @@
+export default class BurgerToXMenu extends HTMLElement {
+  constructor() {
+    super();
+
+    const shadowRoot = this.attachShadow({ mode: "open" });
+
+    shadowRoot.innerHTML = `
+            <style>
+                :root{
+                    --edge-size: 60px;
+                    --magic-translation: calc(var(--edge-size) / 2.3);
+                    --bar-thickness: calc(var(--edge-size) / 7.5);
+                    --bar-color: black;
+                    --rotation-angle: 45deg;
+                    --transition-duration: 250ms;
+                    --transition-easing: ease-in-out;
+                }                
+
+                #menu {
+                    width: var(--edge-size);
+                    aspect-ratio: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .bar {
+                    width: 100%;
+                    height: var(--bar-thickness);
+                    background-color: var(--bar-color);
+                    transition:
+                        transform var(--transition-duration) var(--transition-easing),
+                        opacity var(--transition-duration) var(--transition-easing);
+                }
+
+                #menu:hover {
+                    .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .bar:nth-child(1) {
+                        transform: translateY(var(--magic-translation))
+                        rotate(var(--rotation-angle));
+                    }
+
+                    .bar:nth-child(3) {
+                        transform: translateY(calc(var(--magic-translation) * -1))
+                        rotate(calc(var(--rotation-angle) * -1));
+                    }
+                }
+            </style>
+            <div id="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        `;
+  }
+}
+
+customElements.define("burger-to-x-menu", BurgerToXMenu);
