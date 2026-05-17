@@ -6,7 +6,8 @@
 
 :root {
   --edge-size: 60px;
-  --bar-thickness: 8px;
+  --magic-translation: calc(var(--edge-size) / 2.3);
+  --bar-thickness: calc(var(--edge-size) / 7.5);
   --bar-color: black;
   --rotation-angle: 45deg;
   --transition-duration: 250ms;
@@ -36,10 +37,12 @@
   }
 
   .bar:nth-child(1) {
-    transform: translateY(26px) rotate(var(--rotation-angle));
+    transform: translateY(var(--magic-translation))
+      rotate(var(--rotation-angle));
   }
 
   .bar:nth-child(3) {
-    transform: translateY(-26px) rotate(calc(var(--rotation-angle) * -1));
+    transform: translateY(calc(var(--magic-translation) * -1))
+      rotate(calc(var(--rotation-angle) * -1));
   }
 }
