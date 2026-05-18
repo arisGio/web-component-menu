@@ -1,5 +1,9 @@
 Experimenting with web components by creating a custom hamburger to X menu element.
 
+# Disclaimer
+
+No AI usage. Just plain logic and some googling.
+
 # References
 
 1. [Using CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties)
